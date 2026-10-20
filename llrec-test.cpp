@@ -86,7 +86,24 @@ int main(int argc, char* argv[])
     print(head);
 
     // Test out your linked list code
+   int pivot = 10;
+   Node* small = nullptr;
+   Node* large = nullptr;
+   cout << "Small List should  contain numbers less than 10: " << endl;
+   llpivot (head, small, large, pivot);
+   while(small!= nullptr){
+    cout << small->val << ", ";
+    small=small->next;
+   }
+   cout << endl;
 
+   cout << "Large List should  contain numbers Greater than 10: " << endl;
+   while(large!= nullptr){
+    cout << large->val <<  ", ";
+    large=large->next;
+   }
+   cout << endl;
+   
 
 
     
